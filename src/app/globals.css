@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+:root {
+  /* Background */
+  --bg: #090e1d;
+  --bg2: #101624;
+  --bg3: #181f30;
+
+  /* Border */
+  --border: rgba(0, 212, 255, 0.14);
+  --border2: rgba(255, 255, 255, 0.06);
+
+  /* Accent */
+  --cyan: #00d4ff;
+  --green: #00ff94;
+
+  /* Text */
+  --text: #e8edf5;
+  --text2: #8b9ac0;
+  --text3: #4a5578;
+
+  /* Fonts */
+  --font-family-sans: "Inter", system-ui, sans-serif;
+  --font-family-mono:
+    "JetBrains Mono", "Fira Code", "Cascadia Code", "Consolas", monospace;
+}
+
+/*
+ * Tailwind theme
+ *
+ * These tokens allow us to use:
+ * font-mono
+ * text-cyan
+ * text-text
+ * text-text2
+ * text-text3
+ * bg-bg
+ * bg-bg2
+ * border-border
+ * ...
+ */
+@theme {
+  --font-sans: var(--font-family-sans);
+  --font-mono: var(--font-family-mono);
+
+  --color-bg: var(--bg);
+  --color-bg2: var(--bg2);
+  --color-bg3: var(--bg3);
+
+  --color-border: var(--border);
+  --color-border2: var(--border2);
+
+  --color-cyan: var(--cyan);
+  --color-green: var(--green);
+
+  --color-text: var(--text);
+  --color-text2: var(--text2);
+  --color-text3: var(--text3);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Selection */
+::selection {
+  background: rgba(0, 212, 255, 0.25);
+  color: var(--text);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--cyan), #a78bfa);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan);
+}
+
+/* Cursor blink */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Keyboard focus */
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
