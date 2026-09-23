@@ -1,55 +1,124 @@
-# Dev Portfolio
+# Tran Nhat Truong — Portfolio
 
-Personal portfolio built with **Next.js 15 · TypeScript · Tailwind CSS v4 · Framer Motion**.
+Personal portfolio website showcasing my experience, skills, and projects as a **Frontend Developer**.
 
-## Quick Start
+Built with **Next.js · TypeScript · Tailwind CSS · Framer Motion**.
+
+## Live Demo
+
+* **Portfolio:** Coming soon
+* **GitHub:** https://github.com/truongtnn
+
+## About
+
+I'm a Frontend Developer focused on building responsive, user-friendly web applications.
+
+My main technologies include **React, TypeScript, Next.js, REST API, and Tailwind CSS**.
+
+This portfolio presents my:
+
+* Frontend development skills
+* Professional experience
+* Selected projects
+* Technical background
+* Contact information
+
+## Tech Stack
+
+| Technology    | Usage                        |
+| ------------- | ---------------------------- |
+| Next.js       | React framework / App Router |
+| TypeScript    | Type-safe development        |
+| React         | UI development               |
+| Tailwind CSS  | Styling & responsive design  |
+| Framer Motion | Animations & interactions    |
+| Iconsax React | Interface icons              |
+| Git           | Version control              |
+
+## Project Structure
+
+```text
+src/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+│
+└── components/
+    ├── Nav.tsx
+    ├── Hero.tsx
+    ├── About.tsx
+    ├── Skills.tsx
+    ├── Projects.tsx
+    ├── Experience.tsx
+    ├── Contact.tsx
+    ├── Footer.tsx
+    ├── FadeIn.tsx
+    └── PageEnter.tsx
+```
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/truongtnn/tran-nhat-truong-portfolio.git
+cd tran-nhat-truong-portfolio
+```
+
+Install dependencies:
 
 ```bash
 npm install
+```
+
+Run the development server:
+
+```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
+Open:
 
-## Stack
-
-| Tool | Version |
-|------|---------|
-| Next.js | 15 (App Router) |
-| TypeScript | 5 |
-| Tailwind CSS | v4 |
-| Framer Motion | latest |
-
-## Structure
-
-```
-src/
-  app/
-    layout.tsx      # Root layout + Google Fonts
-    page.tsx        # Main page — assembles all sections
-    globals.css     # CSS variables + Tailwind
-  components/
-    Nav.tsx         # Fixed nav + mobile menu
-    Hero.tsx        # Hero with stagger animation
-    About.tsx       # About + stats grid
-    Skills.tsx      # Tech stack groups
-    Projects.tsx    # Project cards
-    Experience.tsx  # Work/education timeline
-    Contact.tsx     # Contact link panel
-    Footer.tsx      # Footer
-    FadeIn.tsx      # Reusable scroll-triggered fade wrapper
+```text
+http://localhost:3000
 ```
 
-## Customisation
+## Build
 
-- **Personal info** — update name, email, links in each component
-- **Projects** — edit the `projects` array in `src/components/Projects.tsx`
-- **Experience** — edit the `experiences` array in `src/components/Experience.tsx`
-- **Colors** — all CSS variables in `src/app/globals.css`
-
-## Deploy
+Create a production build:
 
 ```bash
-npm run build   # Production build
-npx vercel      # Deploy to Vercel (recommended)
+npm run build
 ```
+
+Run the production server:
+
+```bash
+npm start
+```
+
+## Customization
+
+Personal information and portfolio content can be updated directly in the components:
+
+* **Hero** — `src/components/Hero.tsx`
+* **About** — `src/components/About.tsx`
+* **Skills** — `src/components/Skills.tsx`
+* **Projects** — `src/components/Projects.tsx`
+* **Experience** — `src/components/Experience.tsx`
+* **Contact** — `src/components/Contact.tsx`
+* **Colors & global styles** — `src/app/globals.css`
+
+## Author
+
+**Tran Nhat Truong**
+
+Fresher Frontend Developer
+
+* GitHub: https://github.com/truongtnn
+* Portfolio: Coming soon
+
+---
+
+⭐ If you find this project useful, feel free to star the repository.
